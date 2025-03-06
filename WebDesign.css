@@ -1,0 +1,185 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.main {
+    background-color: beige;
+}
+
+
+header {
+    background-color: aquamarine;
+    display: flex;
+    padding: 15px;
+    height: 200px;
+}
+
+header a {
+    margin: auto 0;
+}
+
+header a img {
+    width: 100px;
+}
+
+header h1 {
+    color: blue;
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav {
+    background-color: cadetblue;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.nav ul li a:hover {
+    background-color: white;
+    color: cadetblue;
+    width: 100%;
+}
+
+.nav ul li:not(:first-child) {
+    padding: 10px 0;
+    border-left: 1px solid white;
+}
+
+.nav ul li a {
+    padding: 10px 40px;
+    color: white;
+}
+
+.nav ul li ul {
+    position: absolute;
+    left: -999px;
+    padding: 0;
+    margin: 10px 0;
+    background-color: cadetblue;
+}
+
+.nav ul li ul li {
+    padding: 10px 0;
+    border: 1px solid white;
+}
+
+.nav ul .two:hover ul {
+    left: auto;
+    display: block;
+    z-index: 99;
+}
+
+.body {
+    display: flex;
+}
+
+.body .side {
+    width: 20%;
+    background-color: cadetblue;
+    padding-top: 15px;
+}
+
+.body .side ul {
+    text-align: center;
+}
+
+.body .side li {
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.body .side li a {
+    color: white;
+    padding: 10px 50px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.body .side li a:hover {
+    color: cadetblue;
+    background-color: white;
+}
+
+.body .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    height: 500px;
+    background-image: linear-gradient(to bottom, yellow, white);
+    position: relative;
+}
+
+.body .content .first {
+    width: 50px;
+    height: 50px;
+    animation-name: moveit;
+    position: relative;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    background-color: red;
+}
+
+@keyframes moveit {
+    0% {
+        top: 0;
+        left: 0;
+        background-color: black;
+    }
+
+    25% {
+        top: 0;
+        left: 95%;
+        background-color: blue;
+    }
+
+    50% {
+        top: 390px;
+        left: 95%;
+        background-color: yellow;
+    }
+
+    75% {
+        top: 390px;
+        left: 0;
+        background-color: green;
+    }
+
+    0% {
+        top: 0;
+        left: 0;
+        background-color: red;
+    }
+}

@@ -1,0 +1,167 @@
+.container {
+    width: 960px;
+    margin: auto;
+    background: lightgoldenrodyellow;
+    min-height: 1000px;
+}
+
+.container header {
+    background-color: aquamarine;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.container header #logo a img {
+    width: 100px;
+}
+
+.container header #logo h1 {
+    float: right
+}
+
+.container nav {
+    text-align: center;
+}
+
+.container nav ul {
+    list-style-type: none;
+    background-color: cadetblue;
+    overflow: hidden;
+}
+
+.container nav ul li {
+    float: left;
+}
+
+.container nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    border-left: solid white 1px;
+    padding: 10px 60px;
+}
+
+.container nav ul ul {
+    position: absolute;
+    left: -999px;
+    padding: 0;
+    margin: 0;
+}
+
+.container nav ul li li {
+    float: none;
+    border-bottom: solid white 1px;
+    border-top: solid white 1px
+}
+
+.container nav ul li:hover ul {
+    left: auto;
+}
+
+.container nav ul li a:hover {
+    color: cadetblue;
+    background: #fff;
+}
+
+.container nav ul li #home {
+    border-left: none
+}
+
+
+.container .footer {
+    background: aquamarine;
+    height: 50px;
+    padding: 20px;
+    text-align: center;
+}
+
+.container #slider {
+    overflow: hidden
+}
+
+.container #slider img {
+    width: 960px;
+    height: 300px;
+}
+
+.container .body {
+    overflow: hidden
+}
+
+.container .body article {
+    width: 280px;
+    height: 340px;
+    margin: 10px;
+    padding: 5px;
+    background: white;
+    border: solid;
+    float: left;
+    border-color: aquamarine;
+}
+
+.container .body article img {
+    width: 280px;
+    height: 200px
+}
+
+.container .About {
+    overflow: hidden
+}
+
+.container .About article {
+    margin: 10px;
+    padding: 5px;
+    background: white;
+    border: solid;
+    float: left;
+    border-color: aquamarine;
+}
+
+.container .About .about_r img {
+    width: 280px;
+    height: 200px;
+    float: left;
+    margin: 10px;
+    padding: 5px;
+}
+
+.container .About about_r p {
+    float: right;
+    padding: 20px;
+}
+
+.container .About .about_l img {
+    width: 280px;
+    height: 200px;
+    float: right;
+    margin: 10px;
+    padding: 5px;
+}
+
+.container .About .about1 img {
+    width: 250px;
+    height: 200px;
+    background: white;
+    border: solid;
+    margin: 10px;
+    padding: 5px;
+    border-color: cadetblue;
+}
+
+.container .About .about1 {
+    width: 280px;
+    margin: 9px;
+    padding: 5px;
+    float: left;
+}
+
+.container .About .about1 h2 {
+    font-size: large;
+    text-align: center;
+    color: darkslategrey
+}
+
+.container .About about_l p {
+    float: left;
+    padding: 20px;
+}
